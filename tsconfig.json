@@ -1,12 +1,13 @@
 {
   "extends": "plasmo/templates/tsconfig.base",
   "exclude": ["node_modules"],
-  "include": [".plasmo/index.d.ts", "./src/**/*.ts", "./src/**/*.tsx"],
+  "include": [".plasmo/index.d.ts", "./src/**/*.{ts,svelte,vue}"],
   "compilerOptions": {
     "paths": {
       "~*": ["./src/*"]
     },
 
-    "baseUrl": "."
+    "baseUrl": ".",
+    "types": ["svelte"]
   }
 }
