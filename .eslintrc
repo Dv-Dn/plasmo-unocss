@@ -1,0 +1,9 @@
+{
+	// "extends": "@antfu",
+	"rules": {
+		"no-only-tests/no-only-tests": "error",
+		"logical-assignment-operators": "error",
+		"no-tabs":"off",
+		"@typescript-eslint/explicit-module-boundary-types": "off"
+	}
+}

@@ -3,25 +3,34 @@
   "displayName": "Drauu plasmo",
   "version": "0.0.1",
   "description": "A basic Plasmo extension.",
-  "author": "Denis Dvorovoy",
+  "author": "Den Dv",
   "scripts": {
-    "dev": "plasmo dev",
-    "build": "plasmo build",
-    "package": "plasmo package"
+    "dev": "concurrently \"pnpm uno-dev\" \"pnpm plasmo-dev\"",
+    "build": "pnpm uno-build && pnpm plasmo-build",
+    "plasmo-dev": "plasmo dev",
+    "plasmo-build": "plasmo build",
+    "package": "plasmo package",
+    "uno-dev": "unocss --watch",
+    "uno-build": "unocss",
+    "up": "taze major -I"
   },
   "dependencies": {
     "plasmo": "0.77.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "svelte": "^4.0.5"
   },
   "devDependencies": {
-    "@types/chrome": "0.0.237",
-    "@types/node": "20.2.4",
-    "@types/react": "18.2.7",
-    "@types/react-dom": "18.2.4",
-    "prettier": "2.8.8",
-    "typescript": "5.0.4",
-    "@plasmohq/prettier-plugin-sort-imports": "3.6.4"
+    "@antfu/eslint-config": "^0.39.7",
+    "@plasmohq/prettier-plugin-sort-imports": "3.6.4",
+    "@types/chrome": "0.0.240",
+    "@types/node": "20.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@unocss/cli": "^0.53.5",
+    "concurrently": "^8.2.0",
+    "eslint": "^8.44.0",
+    "prettier": "3.0.0",
+    "taze": "^0.11.2",
+    "typescript": "5.1.6",
+    "unocss": "^0.53.5"
   },
   "manifest": {
     "host_permissions": [
