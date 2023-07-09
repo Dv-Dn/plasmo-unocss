@@ -1,13 +1,13 @@
 {
   "cSpell.words": ["Vitesse"],
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "vite.autoStart": false,
+  // "typescript.tsdk": "node_modules/typescript/lib",
   "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
     "source.fixAll": true
   },
-  "files.associations": {
-    "*.css": "postcss"
-  },
+  // "files.associations": {
+  //   "*.css": "postcss"
+  // },
   "explorer.fileNesting.patterns": {
     "*.asax": "$(capture).*.cs, $(capture).*.vb",
     "*.ascx": "$(capture).*.cs, $(capture).*.vb",

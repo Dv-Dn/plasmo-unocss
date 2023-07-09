@@ -56,4 +56,8 @@
 }
 
 /* layer: default */
-.bg-red-200{--un-bg-opacity:1;background-color:rgba(254,202,202,var(--un-bg-opacity));}
+.fixed{position:fixed;}
+.left-2{left:0.5rem;}
+.top-2{top:0.5rem;}
+.bg-gray-200{--un-bg-opacity:1;background-color:rgba(229,231,235,var(--un-bg-opacity));}
+.p-2{padding:0.5rem;}

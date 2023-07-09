@@ -15,19 +15,25 @@
     "up": "taze major -I"
   },
   "dependencies": {
+    "@preact/signals-react": "^1.3.4",
     "plasmo": "0.77.5",
-    "svelte": "^4.0.5"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.7",
     "@plasmohq/prettier-plugin-sort-imports": "3.6.4",
     "@types/chrome": "0.0.240",
     "@types/node": "20.4.1",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@unocss/cli": "^0.53.5",
+    "@unocss/reset": "^0.53.5",
     "concurrently": "^8.2.0",
     "eslint": "^8.44.0",
     "prettier": "3.0.0",
+    "svelte-preprocess": "^5.0.4",
     "taze": "^0.11.2",
     "typescript": "5.1.6",
     "unocss": "^0.53.5"
@@ -35,6 +41,11 @@
   "manifest": {
     "host_permissions": [
       "https://*/*"
+    ],
+    "permissions": [
+      "tabs",
+      "storage",
+      "activeTab"
     ]
   }
 }
